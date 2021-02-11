@@ -4,7 +4,7 @@ Created on Wed Jan 27 10:51:18 2021
 
 @author: TSpandana     T
 
-" edited again "
+" edited againnnnnnnnnn "
 
 """
 import json
@@ -62,7 +62,7 @@ def createProduct():
     result=product_schema.dump(product.create())
     return make_response(jsonify({"product":result}),201)
 
-@app.route('/ibm',methods=['GET'])
+@app.route('/products',methods=['GET'])
 def getAllProducts():
     get_products=Product.query.all()
     productSchema=ProductSchema(many=True)
